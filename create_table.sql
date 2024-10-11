@@ -1,0 +1,25 @@
+create table IF NOT EXISTS customer_transactions
+(
+    "order_id"                         text,
+    "order_status"                     text,
+    "order_type"                       text,
+    "product_id"                       bigint,
+    "product_name"                     text,
+    "product_taxable_category"         text,
+    "customer_email"                   text,
+    "customer_age_at_first_purchase"   bigint,
+    "customer_country"                 text,
+    "customer_zip_code"                text,
+    "coupon_applied"                   text,
+    "quantity"                         bigint,
+    "total"                            text,
+    "tax"                              text,
+    "fee"                              text,
+    "currency"                         text,
+    "balance_earnings"                 double precision,
+    "balance_currency"                 text,
+    "source"                           text,
+    "checkout"                         text,
+    "date"                             text,
+    "user_subscription_id"             double precision
+);
