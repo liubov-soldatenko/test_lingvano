@@ -96,3 +96,12 @@ ALTER COLUMN total TYPE double precision USING total::double precision,
     ALTER COLUMN fee TYPE double precision USING fee::double precision,
     ALTER COLUMN date TYPE date USING date::date;
 ```
+
+### 5. Additional questions
+
+> 1. Briefly discuss how your approach to data ingestion, transformation, and storage would change if you had 
+> to implement the Medallion architecture. (max. 200-300 words)
+
+In my case `raw ingestion` is load_data.py and it's `bronse` layer, where we load raw data from source as is.
+Then using basic transformations from task 2, (e.g. remove duplicates, remove nulls, type casting and cleaning) is next
+Silver layer or cleaned data.  And business level aggregation is final step ().
